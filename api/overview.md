@@ -1,6 +1,6 @@
 # Overview
 
-HostedScan offers a comprhensive REST API. API access is available to Enterprise plan customers.
+HostedScan offers a comprehensive REST API. API access is available to Enterprise plan customers.
 
 ## Authentication
 
