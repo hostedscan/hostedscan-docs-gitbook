@@ -24,7 +24,7 @@ Request a specific page of the list results.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": [
     {
@@ -43,3 +43,4 @@ Request a specific page of the list results.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
