@@ -32,17 +32,29 @@ Request a specific page of the list results.
       "type": "NMAP || OPENVAS || OWASP_ZAP",
       "state": "QUEUED || RUNNING || SUCCEEDED || FAILED || OVER_LIMIT",
       "progress": 100,
+      "results": [
+        {
+          "result_id": "string",
+          "content_type": "text/html"
+        }
+      ],
       "requested_targets": [
-        "target_id": "string",
-        "target": "string"
+        {
+          "target_id": "string",
+          "target": "string"
+        }
       ],
       "resolved_targets": [
-        "target_id": "string",
-        "resolved_target": "string"
+        {
+          "target_id": "string",
+          "resolved_target": "string"
+        }
       ],
       "skipped_targets": [
-        "target_id": "string",
-        "skipped_reason": "string"
+        {
+          "target_id": "string",
+          "skipped_reason": "string"
+        }
       ]
     }
   ],
