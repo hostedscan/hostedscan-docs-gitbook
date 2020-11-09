@@ -8,5 +8,8 @@
 
 ## API
 
-* [API Test](api/untitled.md)
+* [Overview](api/overview.md)
+* [Targets](api/targets.md)
+* [Scans](api/scans/README.md)
+  * [List Scans](api/scans/list-scans.md)
 
