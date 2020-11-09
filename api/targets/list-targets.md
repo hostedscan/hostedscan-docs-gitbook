@@ -6,7 +6,7 @@ List Targets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-List all targets
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
