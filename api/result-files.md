@@ -1,4 +1,4 @@
-# Scan Result Files
+# Get Scan Result File
 
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans/results/:id" %}
 {% api-method-summary %}
