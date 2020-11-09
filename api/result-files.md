@@ -1,2 +1,2 @@
-# Result Files
+# Scan Result Files
 

@@ -18,6 +18,6 @@
   * [List Scans](api/scans/list-scans.md)
   * [Get Scan](api/scans/get-scan.md)
   * [Create Scan](api/scans/create-scan.md)
-* [Result Files](api/result-files.md)
+* [Scan Result Files](api/result-files.md)
 * [Risks](api/risks.md)
 
