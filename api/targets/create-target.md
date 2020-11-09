@@ -1,8 +1,8 @@
-# Get Target
+# Create Target
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/targets/:id" %}
+{% api-method method="post" host="https://api.hostedscan.com" path="/v1/targets" %}
 {% api-method-summary %}
-Get Target
+Create Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -11,11 +11,19 @@ Get Target
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
-ID of the target to get.
+{% api-method-body-parameters %}
+{% api-method-parameter name="target" type="string" required=true %}
+IPv4, URL, or Fully Qualified Domain Name
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+
+{% api-method-parameter name="label" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="tags" type="array" required=false %}
+Up to 3 tags
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -24,7 +32,7 @@ ID of the target to get.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": {
     "id": "string",
@@ -40,3 +48,4 @@ ID of the target to get.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
