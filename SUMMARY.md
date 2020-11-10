@@ -17,9 +17,8 @@
 * [Scans](api/scans/README.md)
   * [List Scans](api/scans/list-scans.md)
   * [Get Scan](api/scans/get-scan.md)
+  * [Get Scan Result File](api/scans/result-files.md)
   * [Create Scan](api/scans/create-scan.md)
-* [Scan Result Files](api/scan-result-files/README.md)
-  * [Get Scan Result File](api/scan-result-files/result-files.md)
 * [Risks](api/risks/README.md)
   * [List Risks](api/risks/list-risks.md)
 
