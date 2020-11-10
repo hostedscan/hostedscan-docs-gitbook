@@ -6,7 +6,7 @@ Delete Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Note: deleting a target will also delete any risks associated with that target.
 {% endapi-method-description %}
 
 {% api-method-spec %}
