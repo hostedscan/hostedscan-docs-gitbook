@@ -25,7 +25,7 @@ Returns the scan result file
 {% endapi-method-response-example-description %}
 
 ```
-
+file
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
