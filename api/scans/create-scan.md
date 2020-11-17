@@ -28,7 +28,7 @@ NMAP, OPENVAS, or OWASP\_ZAP
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "data": {
     "id": "string",
@@ -39,6 +39,10 @@ Cake successfully retrieved.
       {
         "result_id": "string",
         "content_type": "text/html"
+      },
+      {
+        "result_id": "string",
+        "content_type": "application/pdf"
       }
     ],
     "requested_targets": [

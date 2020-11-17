@@ -16,6 +16,10 @@ description: 'Run OpenVAS scanner, NMAP Port Scan, and OWASP ZAP against your Ta
     {
       "result_id": "string",
       "content_type": "text/html"
+    },
+    {
+      "result_id": "string",
+      "content_type": "application/pdf"
     }
   ],
   "requested_targets": [

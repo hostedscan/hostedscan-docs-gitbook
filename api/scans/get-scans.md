@@ -40,6 +40,10 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
         {
           "result_id": "string",
           "content_type": "text/html"
+        },
+        {
+          "result_id": "string",
+          "content_type": "application/pdf"
         }
       ],
       "requested_targets": [
@@ -62,7 +66,7 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
       ]
     }
   ],
-  next_page_token: "string"
+  "next_page_token": "string"
 }
 ```
 {% endapi-method-response-example %}
@@ -107,6 +111,10 @@ ID of the scan to get.
       {
         "result_id": "string",
         "content_type": "text/html"
+      },
+      {
+        "result_id": "string",
+        "content_type": "application/pdf"
       }
     ],
     "requested_targets": [
