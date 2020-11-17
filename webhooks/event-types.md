@@ -43,7 +43,7 @@ Occurs whenever a scan has successfully completed running. The event data is a S
 
 ### risks.opened
 
-Occurs whenever a new risk is found. The event data is a Risk object.
+Occurs whenever new risks are found. The event data is an array of Risk objects.
 
 ```javascript
 {
@@ -67,7 +67,7 @@ Occurs whenever a new risk is found. The event data is a Risk object.
 
 ### risks.closed
 
-Occurs when a risk is no longer found to be open. The event data is a Risk object.
+Occurs when risks are no longer found to be open. The event data is an array of Risk objects.
 
 ```javascript
 {
