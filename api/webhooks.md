@@ -54,9 +54,28 @@ Occurs whenever a scan has completed running. The event data is a Scan object.
 }
 ```
 
-### risk.new
+### risk.opened
 
 Occurs whenever a new risk is found. The event data is a Risk object.
+
+```text
+{
+  "id": "string",
+  "target_id": "string",
+  "risk_definition": {
+    "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+    "title": "string",
+    "threat_level": "LOW || MEDIUM || HIGH",
+    "additional_info": {
+      "key": "value"
+    }
+  }
+}
+```
+
+### risk.closed
+
+Occurs when a risk is no longer found to be open. The event data is a Risk object.
 
 ```text
 {
