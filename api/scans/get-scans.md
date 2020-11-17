@@ -6,7 +6,7 @@ Get Scans
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get all scans.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -82,7 +82,7 @@ Get Scan
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a single scan.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
