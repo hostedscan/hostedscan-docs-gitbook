@@ -26,7 +26,7 @@ Returns 200 OK with an empty body
 
 ```text
 {
-  "data": {
+  data: {
   
   }
 }
