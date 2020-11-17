@@ -11,7 +11,7 @@ This documentation covers the REST API and webhook integrations. Use the API to 
 
 
 {% hint style="info" %}
-Any questions at all? Please email us at [hello@hostedscan.com](mailto:hello@hostedscan.com).
+Any questions? Please email us at [hello@hostedscan.com](mailto:hello@hostedscan.com).
 {% endhint %}
 
 
