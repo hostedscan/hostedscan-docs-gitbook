@@ -4,7 +4,7 @@ description: 24x7 Alerts and Detection for Security Vulnerabilities
 
 # Getting started
 
-Welcome to the HostedScan API documentation!
+Welcome to the HostedScan!
 
 This documentation covers the REST API and webhook integrations. Use the API to run scans, get results, and manage risks. Use webhook integrations to receive event notifications in your application.
 
