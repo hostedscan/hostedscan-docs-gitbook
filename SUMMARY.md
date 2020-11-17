@@ -12,8 +12,8 @@
 * [Risks](api/risks/README.md)
   * [List Risks](api/risks/list-risks.md)
 * [Targets](api/targets/README.md)
-  * [Get Targets](api/targets/get-targets.md)
   * [Create Target](api/targets/create-target.md)
+  * [Get Targets](api/targets/get-targets.md)
   * [Update Target](api/targets/update-target.md)
   * [Delete Target](api/targets/delete-target.md)
 
