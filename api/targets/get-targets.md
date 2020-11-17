@@ -1,8 +1,8 @@
-# List Targets
+# Get Targets
 
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/targets" %}
 {% api-method-summary %}
-List Targets
+Get Targets
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -51,4 +51,6 @@ The number of results returned in a page. Default = 25. Max = 500.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 

@@ -6,7 +6,7 @@
 
 * [Overview](api/overview.md)
 * [Targets](api/targets/README.md)
-  * [List Targets](api/targets/list-targets.md)
+  * [Get Targets](api/targets/get-targets.md)
   * [Get Target](api/targets/get-target.md)
   * [Create Target](api/targets/create-target.md)
   * [Delete Target](api/targets/delete-target.md)
