@@ -28,7 +28,7 @@ If there are more than 500 risks, results will be truncated. Use `page_token` to
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "data": [
     {
