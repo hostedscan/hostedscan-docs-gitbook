@@ -13,7 +13,7 @@ Get all targets.
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="filters" type="object" required=false %}
-Filter results to specific targets, eg. `filters={"tags":["prod"],"target":["hostedscan.com"]}`
+Filter results to specific targets. e.g. `filters={"tags":["prod"],"target":["hostedscan.com"]}`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_token" type="string" required=false %}

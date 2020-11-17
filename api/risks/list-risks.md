@@ -1,27 +1,23 @@
-# List Risks
+# Get Risks
 
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/risks" %}
 {% api-method-summary %}
-List Risks
+Get Risks
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Get all risks.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="target\_id" type="string" required=false %}
-Filter list of results to a specific target.
+{% api-method-parameter name="filter" type="string" required=false %}
+Filter results to specific targets. e.g. `filters={"target":["hostedscan.com"],"risk_definition.scan_type":["NMAP"]}`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_token" type="string" required=false %}
-Request a specific page of the list results.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="page\_size" type="string" required=false %}
-Control the number of results returned in a page. Default = 25. Max = 500.
+If there are more than 500 risks, results will be truncated. Use `page_token` to request additional pages of results.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}

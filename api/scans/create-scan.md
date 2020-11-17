@@ -12,6 +12,10 @@ Create a new scan.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="targets" type="array" required=false %}
+
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="target\_ids" type="array" required=true %}
 Ids of targets to scan
 {% endapi-method-parameter %}

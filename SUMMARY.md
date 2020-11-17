@@ -10,7 +10,7 @@
   * [Get Scans](api/scans/get-scans.md)
   * [Get Scan Result File](api/scans/result-files.md)
 * [Risks](api/risks/README.md)
-  * [List Risks](api/risks/list-risks.md)
+  * [Get Risks](api/risks/list-risks.md)
 * [Targets](api/targets/README.md)
   * [Create Target](api/targets/create-target.md)
   * [Get Targets](api/targets/get-targets.md)
