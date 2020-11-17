@@ -1,0 +1,83 @@
+---
+description: The list of all event types HostedScan currently sends.
+---
+
+# Event Types
+
+### scan.completed
+
+Occurs whenever a scan has completed running. The event data is a Scan object.
+
+```text
+{
+  "id": "string",
+  "type": "NMAP || OPENVAS || OWASP_ZAP",
+  "state": SUCCEEDED || FAILED",
+  "progress": 100,
+  "results": [
+    {
+      "result_id": "string",
+      "content_type": "text/html"
+    }
+  ],
+  "requested_targets": [
+    {
+      "target_id": "string",
+      "target": "string"
+    }
+  ],
+  "resolved_targets": [
+    {
+      "target_id": "string",
+      "resolved_target": "string"
+    }
+  ],
+  "skipped_targets": [
+    {
+      "target_id": "string",
+      "skipped_reason": "string"
+    }
+  ]
+}
+```
+
+### risk.opened
+
+Occurs whenever a new risk is found. The event data is a Risk object.
+
+```text
+{
+  "id": "string",
+  "target_id": "string",
+  "risk_definition": {
+    "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+    "title": "string",
+    "threat_level": "LOW || MEDIUM || HIGH",
+    "status": "OPEN",
+    "additional_info": {
+      "key": "value"
+    }
+  }
+}
+```
+
+### risk.closed
+
+Occurs when a risk is no longer found to be open. The event data is a Risk object.
+
+```text
+{
+  "id": "string",
+  "target_id": "string",
+  "risk_definition": {
+    "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+    "title": "string",
+    "threat_level": "LOW || MEDIUM || HIGH",
+    "status": "CLOSED",
+    "additional_info": {
+      "key": "value"
+    }
+  }
+}
+```
+

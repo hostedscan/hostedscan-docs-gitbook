@@ -17,5 +17,9 @@
   * [Get Scan Result File](api/scans/result-files.md)
 * [Risks](api/risks/README.md)
   * [List Risks](api/risks/list-risks.md)
-* [Webhooks](api/webhooks.md)
+
+## Webhooks
+
+* [Overview](webhooks/overview.md)
+* [Event Types](webhooks/event-types.md)
 

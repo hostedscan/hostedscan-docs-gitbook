@@ -42,6 +42,7 @@ Cake successfully retrieved.
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
         "title": "string",
         "threat_level": "LOW || MEDIUM || HIGH",
+        "status": "OPEN || CLOSED",
         "additional_info": {
           "key": "value"
         }
