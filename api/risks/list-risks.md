@@ -6,7 +6,7 @@ Get Risks
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get all risks.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
