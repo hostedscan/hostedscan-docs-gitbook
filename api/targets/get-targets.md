@@ -52,10 +52,6 @@ The number of results returned in a page. Default = 25. Max = 500.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-# Get Target
-
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/targets/:id" %}
 {% api-method-summary %}
 Get Target
@@ -96,3 +92,4 @@ ID of the target to get.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
