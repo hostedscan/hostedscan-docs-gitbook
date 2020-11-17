@@ -21,11 +21,13 @@ ID of the target to delete.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Returns 200 OK with an empty body
 {% endapi-method-response-example-description %}
 
 ```text
+{
 
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
