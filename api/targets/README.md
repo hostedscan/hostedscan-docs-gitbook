@@ -4,7 +4,7 @@ Targets are the servers and websites to be scanned for vulnerabilities. A target
 
 ### Target Object
 
-```text
+```javascript
 {
   "id": "string",
   "target": "string",

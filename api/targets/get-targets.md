@@ -6,7 +6,7 @@ Get Targets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Get all Targets.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -54,7 +54,7 @@ Get Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Get a single Target.
 {% endapi-method-description %}
 
 {% api-method-spec %}

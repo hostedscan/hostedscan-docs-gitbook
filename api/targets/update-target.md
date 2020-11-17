@@ -6,7 +6,7 @@ Update Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Update label or tags of an existing Target.
 {% endapi-method-description %}
 
 {% api-method-spec %}

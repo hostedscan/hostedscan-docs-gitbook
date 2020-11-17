@@ -4,7 +4,7 @@ HostedScan offers a comprehensive REST API at https://api.hostedscan.com/v1. API
 
 ## Authentication
 
-Authenticate by setting the X-HOSTEDSCAN-API-KEY request header as your API key.
+Authenticate by setting the `X-HOSTEDSCAN-API-KEY` request header as your API key.
 
 ## Testing with Sample Data
 
