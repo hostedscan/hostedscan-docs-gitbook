@@ -32,7 +32,7 @@ Returns the scan result file
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example
+### Try it!
 
 ```bash
 curl -o result.pdf -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET "https://api.hostedscan.com/v1/scans/results/12345"
