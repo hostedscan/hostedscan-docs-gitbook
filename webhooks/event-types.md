@@ -12,7 +12,7 @@ Occurs whenever a scan has successfully completed running. The event data is a S
 {
   "id": "string",
   "type": "NMAP || OPENVAS || OWASP_ZAP",
-  "state": SUCCEEDED",
+  "state": "SUCCEEDED",
   "progress": 100,
   "results": [
     {
