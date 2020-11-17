@@ -25,9 +25,7 @@ Returns 200 OK with an empty body
 {% endapi-method-response-example-description %}
 
 ```text
-{
 
-}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
