@@ -1,6 +1,6 @@
 # Overview
 
-HostedScan uses webhooks to send event notifications to your application. To integrate with webhooks, create a webhook endpoint on your server, then register the endpoint with your HostedScan account.
+HostedScan uses webhooks to send event notifications to your application. To integrate with webhooks, create a webhook endpoint on your server, then register the endpoint with your HostedScan account. Webhooks are available to Enterprise plan customers.
 
 ## Events
 
