@@ -29,7 +29,7 @@ NMAP, OPENVAS, or OWASP\_ZAP
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```javascript
