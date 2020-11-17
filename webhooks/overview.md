@@ -4,7 +4,7 @@ HostedScan uses webhooks to send event notifications to your application. Webhoo
 
 ## Events
 
-The webhook notifications sent by HostedScan are Event objects. An Event is a JSON structure with the following properties: a unique `id`, the `created_at` ****time, the event `type`**,** and the `data`. 
+The webhook notifications sent by HostedScan are Event objects. An Event is a JSON structure with the following properties: the event `id`, the `created_at` ****time, the event `type`**,** and the `data`. 
 
 ```text
 {
@@ -16,6 +16,10 @@ The webhook notifications sent by HostedScan are Event objects. An Event is a JS
   }
 }
 ```
+
+## Registering an Endpoint
+
+Your webhook endpoint must use HTTPS with a signed certificate, such as one from [https://letsencrypt.org](https://letsencrypt.org). HostedScan will not send to endpoints using self-signed certificates.
 
 
 
