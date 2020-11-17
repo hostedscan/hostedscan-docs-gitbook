@@ -10,7 +10,7 @@ Authenticate by setting the X-HOSTEDSCAN-API-KEY request header as your API key.
 
 To try out the APIs with sample data, use the api key **test-data-key**. Requests made with this api key will return sample responses. For example:
 
-```text
+```bash
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/scans
 ```
 
