@@ -12,12 +12,12 @@ List Scans
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="page\_size" type="string" required=false %}
-Control the number of results returned in a page. Default = 25. Max = 500.
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="page\_token" type="string" required=false %}
 Request a specific page of the list results.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="string" required=false %}
+Control the number of results returned in a page. Default = 25. Max = 500.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
