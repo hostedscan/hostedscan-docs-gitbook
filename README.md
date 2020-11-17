@@ -10,6 +10,12 @@ The best way to get acquainted with HostedScan, is to head over to our website a
 
 This documentation covers the [API](api/overview.md) and [webhook](webhooks/overview.md) integrations. Use the API to run scans, get results, and manage risks. Use webhook integrations to receive event notifications in your application.
 
+{% page-ref page="api/scans/" %}
+
+{% page-ref page="api/risks/" %}
+
+{% page-ref page="api/targets/" %}
+
 
 
 {% hint style="info" %}
