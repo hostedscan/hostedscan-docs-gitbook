@@ -32,3 +32,9 @@ Returns 200 OK with an empty body
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Try it!
+
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request DELETE https://api.hostedscan.com/v1/targets/12345
+```
+
