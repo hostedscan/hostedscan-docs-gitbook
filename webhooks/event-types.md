@@ -47,17 +47,21 @@ Occurs whenever a new risk is found. The event data is a Risk object.
 
 ```javascript
 {
-  "id": "string",
-  "target_id": "string",
-  "status": "OPEN",
-  "risk_definition": {
-    "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
-    "title": "string",
-    "threat_level": "LOW || MEDIUM || HIGH",
-    "additional_info": {
-      "key": "value"
+  "data" : [
+    {
+      "id": "string",
+      "target_id": "string",
+      "status": "OPEN",
+      "risk_definition": {
+        "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+        "title": "string",
+        "threat_level": "LOW || MEDIUM || HIGH",
+        "additional_info": {
+          "key": "value"
+        }
+      }
     }
-  }
+  ]
 }
 ```
 
@@ -67,17 +71,21 @@ Occurs when a risk is no longer found to be open. The event data is a Risk objec
 
 ```javascript
 {
-  "id": "string",
-  "target_id": "string",
-  "status": "CLOSED",
-  "risk_definition": {
-    "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
-    "title": "string",
-    "threat_level": "LOW || MEDIUM || HIGH",
-    "additional_info": {
-      "key": "value"
+  "data" : [
+    {
+      "id": "string",
+      "target_id": "string",
+      "status": "CLOSED",
+      "risk_definition": {
+        "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+        "title": "string",
+        "threat_level": "LOW || MEDIUM || HIGH",
+        "additional_info": {
+          "key": "value"
+        }
+      }
     }
-  }
+  ]
 }
 ```
 
