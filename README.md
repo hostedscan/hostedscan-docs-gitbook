@@ -1,5 +1,5 @@
 ---
-description: HostedScan API Documentation
+description: 24x7 Alerts and Detection for Security Vulnerabilities
 ---
 
 # Getting started
