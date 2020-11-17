@@ -10,34 +10,36 @@ Occurs whenever a scan has successfully completed running. The event data is a S
 
 ```javascript
 {
-  "id": "string",
-  "type": "NMAP || OPENVAS || OWASP_ZAP",
-  "state": "SUCCEEDED",
-  "progress": 100,
-  "results": [
-    {
-      "result_id": "string",
-      "content_type": "text/html"
-    }
-  ],
-  "requested_targets": [
-    {
-      "target_id": "string",
-      "target": "string"
-    }
-  ],
-  "resolved_targets": [
-    {
-      "target_id": "string",
-      "resolved_target": "string"
-    }
-  ],
-  "skipped_targets": [
-    {
-      "target_id": "string",
-      "skipped_reason": "string"
-    }
-  ]
+  "data": {
+    "id": "string",
+    "type": "NMAP || OPENVAS || OWASP_ZAP",
+    "state": "SUCCEEDED",
+    "progress": 100,
+    "results": [
+      {
+        "result_id": "string",
+        "content_type": "text/html"
+      }
+    ],
+    "requested_targets": [
+      {
+        "target_id": "string",
+        "target": "string"
+      }
+    ],
+    "resolved_targets": [
+      {
+        "target_id": "string",
+        "resolved_target": "string"
+      }
+    ],
+    "skipped_targets": [
+      {
+        "target_id": "string",
+        "skipped_reason": "string"
+      }
+    ]
+  }
 }
 ```
 
@@ -47,7 +49,7 @@ Occurs whenever new risks are found. The event data is an array of Risk objects.
 
 ```javascript
 {
-  "data" : [
+  "data": [
     {
       "id": "string",
       "target_id": "string",
@@ -71,7 +73,7 @@ Occurs when risks are no longer found to be open. The event data is an array of 
 
 ```javascript
 {
-  "data" : [
+  "data": [
     {
       "id": "string",
       "target_id": "string",
