@@ -25,7 +25,7 @@ If there are more than 500 risks, results will be truncated. Use `page_token` to
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```javascript
