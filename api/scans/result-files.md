@@ -24,8 +24,8 @@ ID of the result file to get.
 Returns the scan result file
 {% endapi-method-response-example-description %}
 
-```
-file
+```javascript
+// file
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -34,7 +34,7 @@ file
 
 ### Example
 
-```text
+```bash
 curl -o result.pdf -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET "https://api.hostedscan.com/v1/scans/results/12345"
 ```
 
