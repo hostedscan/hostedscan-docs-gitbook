@@ -4,15 +4,15 @@ description: The list of all event types HostedScan currently sends.
 
 # Event Types
 
-### scan.completed
+### scan.succeeded
 
-Occurs whenever a scan has completed running. The event data is a Scan object.
+Occurs whenever a scan has successfully completed running. The event data is a Scan object.
 
 ```text
 {
   "id": "string",
   "type": "NMAP || OPENVAS || OWASP_ZAP",
-  "state": SUCCEEDED || FAILED",
+  "state": SUCCEEDED",
   "progress": 100,
   "results": [
     {
