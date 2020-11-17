@@ -6,8 +6,8 @@
 
 * [Overview](api/overview.md)
 * [Scans](api/scans/README.md)
-  * [Get Scans](api/scans/get-scans.md)
   * [Create Scan](api/scans/create-scan.md)
+  * [Get Scans](api/scans/get-scans.md)
   * [Get Scan Result File](api/scans/result-files.md)
 * [Risks](api/risks/README.md)
   * [List Risks](api/risks/list-risks.md)
