@@ -12,6 +12,10 @@ List Targets
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
+{% api-method-parameter name="target" type="string" required=false %}
+Filter results to a specific target. E.g. /targets?target=example.com
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="page\_token" type="string" required=false %}
 Request a specific page of the list results.
 {% endapi-method-parameter %}
