@@ -6,7 +6,7 @@ Get Scans
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Get all scans.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -17,7 +17,7 @@ Filter results to specific scans, eg. `filters={"tags":["prod"],"target":["hoste
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_token" type="string" required=false %}
-If there are more than 500 scans, results will be truncated. Use `page_token` to request additional pages of results. 
+If there are more than 500 scans, results will be truncated. Use `page_token` to request additional pages of results.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -70,7 +70,7 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
 {% endapi-method-spec %}
 {% endapi-method %}
 
-# Get Scan
+
 
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans/:id" %}
 {% api-method-summary %}
@@ -78,7 +78,7 @@ Get Scan
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Get a single scan.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -96,7 +96,7 @@ ID of the scan to get.
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "data": {
     "id": "string",
@@ -134,7 +134,4 @@ ID of the scan to get.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
 
