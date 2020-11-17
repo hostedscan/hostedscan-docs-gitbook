@@ -6,7 +6,7 @@ Create Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Create a new Target.
+Create a new target.
 {% endapi-method-description %}
 
 {% api-method-spec %}

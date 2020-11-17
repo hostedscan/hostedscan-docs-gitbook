@@ -1,10 +1,12 @@
-# Scans
+---
+description: 'Run OpenVAS scanner, NMAP Port Scan, and OWASP ZAP against your Targets.'
+---
 
-Scans are executions of a scanner against one or more targets.
+# Scans
 
 ### Scan Object
 
-```text
+```javascript
 {
   "id": "string",
   "type": "NMAP || OPENVAS || OWASP_ZAP",

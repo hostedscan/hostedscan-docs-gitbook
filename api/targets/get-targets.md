@@ -6,13 +6,13 @@ Get Targets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get all Targets.
+Get all targets.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="filters" type="string" required=false %}
+{% api-method-parameter name="filters" type="object" required=false %}
 Filter results to specific targets, eg. `filters={"tags":["prod"],"target":["hostedscan.com"]}`
 {% endapi-method-parameter %}
 
@@ -54,7 +54,7 @@ Get Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a single Target.
+Get a single target.
 {% endapi-method-description %}
 
 {% api-method-spec %}

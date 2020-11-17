@@ -1,8 +1,8 @@
-# List Scans
+# Get Scans
 
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans" %}
 {% api-method-summary %}
-List Scans
+Get Scans
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -12,12 +12,12 @@ List Scans
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="page\_token" type="string" required=false %}
-Request a specific page of the list results.
+{% api-method-parameter name="filters" type="object" required=false %}
+Filter results to specific scans, eg. `filters={"tags":["prod"],"target":["hostedscan.com"]}`
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page\_size" type="string" required=false %}
-Control the number of results returned in a page. Default = 25. Max = 500.
+{% api-method-parameter name="page\_token" type="string" required=false %}
+If there are more than 500 scans, results will be truncated. Use `page_token` to request additional pages of results. 
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -28,7 +28,7 @@ Control the number of results returned in a page. Default = 25. Max = 500.
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "data": [
     {
