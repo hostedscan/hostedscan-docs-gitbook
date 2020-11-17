@@ -41,7 +41,7 @@ Occurs whenever a scan has successfully completed running. The event data is a S
 }
 ```
 
-### risk.opened
+### risks.opened
 
 Occurs whenever a new risk is found. The event data is a Risk object.
 
@@ -61,7 +61,7 @@ Occurs whenever a new risk is found. The event data is a Risk object.
 }
 ```
 
-### risk.closed
+### risks.closed
 
 Occurs when a risk is no longer found to be open. The event data is a Risk object.
 
