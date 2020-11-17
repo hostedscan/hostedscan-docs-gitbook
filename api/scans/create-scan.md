@@ -6,7 +6,7 @@ Create Scan
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Create a new scan.
 {% endapi-method-description %}
 
 {% api-method-spec %}
