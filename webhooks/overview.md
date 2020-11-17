@@ -21,5 +21,7 @@ The webhook notifications sent by HostedScan are Event objects. An Event is a JS
 
 Your webhook endpoint must use HTTPS with a signed certificate, such as one from [https://letsencrypt.org](https://letsencrypt.org). HostedScan will not send to endpoints using self-signed certificates.
 
+## Securing Your Webhooks
 
+When you register an endpoint, HostedScan creates a secret token for that endpoint. HostedScan sends this token in the header of each Event request as `X-HOSTEDSCAN-WH-TOKEN`. To validate that an event was sent by HostedScan, check that the token in the request matches the secret token for your endpoint.
 
