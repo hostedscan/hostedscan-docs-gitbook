@@ -48,6 +48,14 @@ If there are more than 500 targets, results will be truncated. Use `page_token` 
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Try it!
+
+
+
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/targets
+```
+
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/targets/:id" %}
 {% api-method-summary %}
 Get Target
@@ -88,4 +96,10 @@ ID of the target to get.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Try it!
+
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/targets/12345
+```
 
