@@ -34,11 +34,11 @@ Cake successfully retrieved.
     {
       "id": "string",
       "target_id": "string",
+      "status": "OPEN || CLOSED",
       "risk_definition": {
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
         "title": "string",
         "threat_level": "LOW || MEDIUM || HIGH",
-        "status": "OPEN || CLOSED",
         "additional_info": {
           "key": "value"
         }
