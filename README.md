@@ -4,7 +4,7 @@ description: 24x7 Alerts and Detection for Security Vulnerabilities
 
 # Getting started
 
-Welcome to HostedScan!
+### Welcome to HostedScan!
 
 The best way to get acquainted with HostedScan, is to head over to our website and start running some test scans! Try it out [here](https://hostedscan.com)!
 
