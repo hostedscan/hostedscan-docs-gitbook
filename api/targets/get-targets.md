@@ -12,16 +12,12 @@ Get Targets
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="target" type="string" required=false %}
-Filter results to a specific target. E.g. /targets?target=example.com
+{% api-method-parameter name="filters" type="string" required=false %}
+Filter results to specific targets, eg. `filters={"tags":["prod"],"target":["hostedscan.com"]}`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_token" type="string" required=false %}
-Request a specific page of the list results.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="page\_size" type="string" required=false %}
-The number of results returned in a page. Default = 25. Max = 500.
+If there are more than 500 targets, results will be truncated. Use `page_token` to request additional pages of results.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}

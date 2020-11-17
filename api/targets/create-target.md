@@ -13,15 +13,15 @@ Create Target
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="target" type="string" required=true %}
-IPv4, URL, or Fully Qualified Domain Name
+IPv4, URL, or Fully Qualified Domain Name, eg. `123.456.789.1`, `google.com`, or `https://google.com/path`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="label" type="string" required=false %}
-
+Label of the target
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="tags" type="array" required=false %}
-Up to 3 tags
+Up to 10 tags for filtering and sorting
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

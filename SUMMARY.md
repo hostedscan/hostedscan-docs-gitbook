@@ -8,6 +8,7 @@
 * [Targets](api/targets/README.md)
   * [Get Targets](api/targets/get-targets.md)
   * [Create Target](api/targets/create-target.md)
+  * [Update Target](api/targets/update-target.md)
   * [Delete Target](api/targets/delete-target.md)
 * [Scans](api/scans/README.md)
   * [Create Scan](api/scans/create-scan.md)
