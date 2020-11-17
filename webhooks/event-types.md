@@ -8,7 +8,7 @@ description: The list of all event types HostedScan currently sends.
 
 Occurs whenever a scan has successfully completed running. The event data is a Scan object.
 
-```text
+```javascript
 {
   "id": "string",
   "type": "NMAP || OPENVAS || OWASP_ZAP",
@@ -45,7 +45,7 @@ Occurs whenever a scan has successfully completed running. The event data is a S
 
 Occurs whenever a new risk is found. The event data is a Risk object.
 
-```text
+```javascript
 {
   "id": "string",
   "target_id": "string",
@@ -65,7 +65,7 @@ Occurs whenever a new risk is found. The event data is a Risk object.
 
 Occurs when a risk is no longer found to be open. The event data is a Risk object.
 
-```text
+```javascript
 {
   "id": "string",
   "target_id": "string",
