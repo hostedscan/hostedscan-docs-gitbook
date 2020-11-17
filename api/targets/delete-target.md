@@ -6,7 +6,7 @@ Delete Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Note: deleting a target will also delete any risks associated with that target.
+Note: Deleting a target will also delete any Risks associated with that target.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,8 +24,8 @@ ID of the target to delete.
 Returns 200 OK with an empty body
 {% endapi-method-response-example-description %}
 
-```text
-
+```javascript
+// N/A
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

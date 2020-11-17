@@ -17,7 +17,7 @@ IPv4, URL, or Fully Qualified Domain Name, eg. `123.456.789.1`, `google.com`, or
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="label" type="string" required=false %}
-Label of the target
+Label for the target
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="tags" type="array" required=false %}
@@ -32,7 +32,7 @@ Up to 10 tags for filtering and sorting
 
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "data": {
     "id": "string",

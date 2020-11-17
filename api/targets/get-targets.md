@@ -28,7 +28,7 @@ If there are more than 500 targets, results will be truncated. Use `page_token` 
 
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "data": [
     {
@@ -72,7 +72,7 @@ ID of the target to get.
 
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "data": {
     "id": "string",

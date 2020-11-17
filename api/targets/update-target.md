@@ -1,8 +1,8 @@
-# Create Target
+# Update Target
 
-{% api-method method="post" host="https://api.hostedscan.com" path="/v1/targets" %}
+{% api-method method="put" host="https://api.hostedscan.com" path="/v1/targets/:id" %}
 {% api-method-summary %}
-Create Target
+Update Target
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -12,16 +12,12 @@ Create Target
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="target" type="string" required=true %}
-IPv4, URL, or Fully Qualified Domain Name
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="label" type="string" required=false %}
-
+Label for the target
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="tags" type="array" required=false %}
-Up to 3 tags
+Up to 10 tags for filtering and sorting
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -32,7 +28,7 @@ Up to 3 tags
 
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "data": {
     "id": "string",
@@ -48,3 +44,4 @@ Up to 3 tags
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
