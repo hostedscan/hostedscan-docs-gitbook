@@ -75,5 +75,9 @@ NMAP, OPENVAS, or OWASP\_ZAP
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Try it!
 
+```bash
+curl -H "Content-Type: application/json" -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request POST --data '{"target_ids": ["123", "456"], "type": "NMAP"}' https://api.hostedscan.com/v1/scans
+```
 
