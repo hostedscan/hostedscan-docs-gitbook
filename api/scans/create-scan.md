@@ -6,14 +6,14 @@ Create Scan
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Create a new scan.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="targets" type="array" required=false %}
-Targets to scan. e.g. `["example.com", "123.123.123.123"]` Targets will be created automatically for any that do exist already. Either targets or target\_ids must be specified.
+Targets to scan. e.g. `["example.com", "123.123.123.123"]`  Either targets or target\_ids must be specified.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="target\_ids" type="array" required=false %}
