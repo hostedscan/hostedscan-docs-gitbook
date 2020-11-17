@@ -24,6 +24,8 @@ curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedsc
 | 404 | Not Found - No resource at the requested path. |
 | 500 | Internal Server Error - Something went wrong on our server. |
 
+
+
 {% hint style="info" %}
 Any questions? Please email us at [hello@hostedscan.com](mailto:hello@hostedscan.com).
 {% endhint %}
