@@ -49,3 +49,9 @@ Up to 10 tags for filtering and sorting
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Try it!
+
+```bash
+curl -H "Content-Type: application/json" -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request POST --data '{"target":"test.com", "tags":["api-test"]}' https://api.hostedscan.com/v1/targets
+```
+
