@@ -53,6 +53,12 @@ If there are more than 500 risks, results will be truncated. Use `page_token` to
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Try it!
+
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/risks
+```
+
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/risks/:id" %}
 {% api-method-summary %}
 Get Risk
@@ -100,4 +106,10 @@ ID of the risk to get.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Try it!
+
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/risks/12345
+```
 

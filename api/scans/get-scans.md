@@ -74,7 +74,11 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Try it!
 
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/scans
+```
 
 {% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans/:id" %}
 {% api-method-summary %}
@@ -142,4 +146,10 @@ ID of the scan to get.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Try it!
+
+```bash
+curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/scans/12345
+```
 
