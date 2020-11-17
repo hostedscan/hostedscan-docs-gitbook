@@ -4,6 +4,12 @@ description: 'Run OpenVAS scanner, NMAP Port Scan, and OWASP ZAP against your Ta
 
 # Scans
 
+{% page-ref page="create-scan.md" %}
+
+{% page-ref page="get-scans.md" %}
+
+{% page-ref page="result-files.md" %}
+
 ### Scan Object
 
 ```javascript
