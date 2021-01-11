@@ -11,6 +11,12 @@ Create Target
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="upsert" type="boolean" required=false %}
+Update target if it already exists. Defaults to false.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="target" type="string" required=true %}
 IPv4, URL, or Fully Qualified Domain Name, eg. `123.456.789.1`, `google.com`, or `https://google.com/path`
