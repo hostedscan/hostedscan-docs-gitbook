@@ -12,7 +12,7 @@ Get Risks
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="filter" type="string" required=false %}
+{% api-method-parameter name="filters" type="string" required=false %}
 Filter results to specific targets. e.g. `filters={"target":["hostedscan.com"],"risk_definition.scan_type":["NMAP"]}`
 {% endapi-method-parameter %}
 
