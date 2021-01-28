@@ -21,7 +21,7 @@ IDs of targets to scan. Either targets or target\_ids must be specified.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
-NMAP, OPENVAS, or OWASP\_ZAP
+NMAP, NMAP\_UDP, SSLYZE, OPENVAS, or OWASP\_ZAP
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
