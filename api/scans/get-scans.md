@@ -12,10 +12,6 @@ Get Scans
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="filters" type="object" required=false %}
-Filter results to specific scans. e.g. `filters={"type":["NMAP"],"state":["SUCCEEDED"]}`
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="page\_token" type="string" required=false %}
 If there are more than 500 scans, results will be truncated. Use `page_token` to request additional pages of results.
 {% endapi-method-parameter %}
