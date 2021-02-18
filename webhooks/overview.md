@@ -1,6 +1,6 @@
 # Overview
 
-HostedScan uses webhooks to send event notifications to your application. Webhooks are available to Enterprise plan customers.
+HostedScan uses webhooks to send event notifications to your application. Webhooks are currently available in beta. Please contact us at hello@hostedscan.com for beta access.
 
 ## Events
 
