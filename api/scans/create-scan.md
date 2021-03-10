@@ -12,9 +12,6 @@ Create Scan
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="tags" type="array" required=false %}
-Tags to scan. e.g. `["prod", "webserver"]` Either tags, targets, or target\_ids must be specified.
-{% endapi-method-parameter %}
 
 {% api-method-parameter name="targets" type="array" required=false %}
 Targets to scan. e.g. `["example.com", "123.123.123.123"]`  Either tags, targets, or target\_ids must be specified.
@@ -22,6 +19,10 @@ Targets to scan. e.g. `["example.com", "123.123.123.123"]`  Either tags, targets
 
 {% api-method-parameter name="target\_ids" type="array" required=false %}
 IDs of targets to scan. Either tags, targets, or target\_ids must be specified.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="tags" type="array" required=false %}
+Tags to scan. e.g. `["prod", "webserver"]` Either tags, targets, or target\_ids must be specified.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
