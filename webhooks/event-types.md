@@ -43,51 +43,47 @@ Occurs whenever a scan has successfully completed running. The event data is a S
 }
 ```
 
-### risks.opened
+### risk.opened
 
-Occurs whenever new risks are found. The event data is an array of Risk objects.
+Occurs whenever a new risk is found. The event data is a Risk objects.
 
 ```javascript
 {
-  "data": [
-    {
-      "id": "string",
-      "target_id": "string",
-      "status": "OPEN",
-      "risk_definition": {
-        "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
-        "title": "string",
-        "threat_level": "LOW || MEDIUM || HIGH",
-        "additional_info": {
-          "key": "value"
-        }
+  "data": {
+    "id": "string",
+    "target_id": "string",
+    "status": "OPEN",
+    "risk_definition": {
+      "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+      "title": "string",
+      "threat_level": "LOW || MEDIUM || HIGH",
+      "additional_info": {
+        "key": "value"
       }
     }
-  ]
+  }
 }
 ```
 
-### risks.closed
+### risk.closed
 
-Occurs when risks are no longer found to be open. The event data is an array of Risk objects.
+Occurs when a risk is no longer found to be open. The event data is a Risk object.
 
 ```javascript
 {
-  "data": [
-    {
-      "id": "string",
-      "target_id": "string",
-      "status": "CLOSED",
-      "risk_definition": {
-        "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
-        "title": "string",
-        "threat_level": "LOW || MEDIUM || HIGH",
-        "additional_info": {
-          "key": "value"
-        }
+  "data": {
+    "id": "string",
+    "target_id": "string",
+    "status": "CLOSED",
+    "risk_definition": {
+      "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
+      "title": "string",
+      "threat_level": "LOW || MEDIUM || HIGH",
+      "additional_info": {
+        "key": "value"
       }
     }
-  ]
+  }
 }
 ```
 

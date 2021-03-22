@@ -12,9 +12,8 @@ Create Scan
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="targets" type="array" required=false %}
-Targets to scan. e.g. `["example.com", "123.123.123.123"]`  Either tags, targets, or target\_ids must be specified.
+Targets to scan. e.g. `["example.com", "123.123.123.123"]` Either tags, targets, or target\_ids must be specified.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="target\_ids" type="array" required=false %}
@@ -80,7 +79,7 @@ NMAP, NMAP\_UDP, SSLYZE, OPENVAS, or OWASP\_ZAP
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Try it!
+## Try it!
 
 ```bash
 curl -H "Content-Type: application/json" -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request POST --data '{"target_ids": ["123", "456"], "type": "NMAP"}' https://api.hostedscan.com/v1/scans
