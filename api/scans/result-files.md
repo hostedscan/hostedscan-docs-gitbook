@@ -1,6 +1,6 @@
 # Get Scan Result File
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans/results/:id" %}
+{% api-method method="get" host="https://api.hostedscan.com" path="/v1/results/:id" %}
 {% api-method-summary %}
 Get Scan Result File
 {% endapi-method-summary %}
@@ -35,7 +35,7 @@ Returns the scan result file
 ### Try it!
 
 ```bash
-curl -o result.pdf -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET "https://api.hostedscan.com/v1/scans/results/12345"
+curl -o result.pdf -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET "https://api.hostedscan.com/v1/results/12345"
 ```
 
 
