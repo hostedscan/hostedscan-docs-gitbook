@@ -87,6 +87,8 @@ ID of the risk to get.
     {
       "id": "string",
       "target_id": "string",
+      "target": "string",
+      "tags": [],
       "status": "OPEN || CLOSED",
       "risk_definition": {
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
