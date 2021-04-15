@@ -30,6 +30,8 @@ If there are more than 500 risks, results will be truncated. Use `page_token` to
     {
       "id": "string",
       "target_id": "string",
+      "target": "string",
+      "tags": [],
       "status": "OPEN || CLOSED",
       "risk_definition": {
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",

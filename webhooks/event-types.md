@@ -52,6 +52,8 @@ Occurs whenever a new risk is found. The event data is a Risk objects.
   "data": {
     "id": "string",
     "target_id": "string",
+    "target": "string",
+    "tags": [],
     "status": "OPEN",
     "risk_definition": {
       "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
@@ -74,6 +76,8 @@ Occurs when a risk is no longer found to be open. The event data is a Risk objec
   "data": {
     "id": "string",
     "target_id": "string",
+    "target": "string",
+    "tags": [],
     "status": "CLOSED",
     "risk_definition": {
       "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
