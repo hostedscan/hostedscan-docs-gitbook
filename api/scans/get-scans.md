@@ -29,7 +29,7 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
   "data": [
     {
       "id": "string",
-      "type": "NMAP || OPENVAS || OWASP_ZAP",
+      "type": "NMAP || OPENVAS || OWASP_ZAP || OWASP_ZAP_ACTIVE || SSLYZE",
       "state": "QUEUED || RUNNING || SUCCEEDED || FAILED || OVER_LIMIT",
       "progress": 100,
       "results": [
@@ -40,6 +40,14 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
         {
           "result_id": "string",
           "content_type": "application/pdf"
+        },
+        {
+          "result_id": "string",
+          "content_type": "application/xml"
+        },
+        {
+          "result_id": "string",
+          "content_type": "application/json"
         }
       ],
       "requested_targets": [
@@ -104,7 +112,7 @@ ID of the scan to get.
 {
   "data": {
     "id": "string",
-    "type": "NMAP || OPENVAS || OWASP_ZAP",
+    "type": "NMAP || OPENVAS || OWASP_ZAP || OWASP_ZAP_ACTIVE || SSLYZE",
     "state": "QUEUED || RUNNING || SUCCEEDED || FAILED || OVER_LIMIT",
     "progress": 100,
     "results": [
@@ -115,6 +123,14 @@ ID of the scan to get.
       {
         "result_id": "string",
         "content_type": "application/pdf"
+      },
+      {
+        "result_id": "string",
+        "content_type": "application/xml"
+      },
+      {
+        "result_id": "string",
+        "content_type": "application/json"
       }
     ],
     "requested_targets": [
