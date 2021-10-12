@@ -1,29 +1,33 @@
 # Get Risks
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/risks" %}
-{% api-method-summary %}
-Get Risks
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/risks" method="get" summary="Get Risks" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="query" name="page_token" type="string" %}
+If there are more than 500 risks, results will be truncated. Use 
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="page\_token" type="string" required=false %}
-If there are more than 500 risks, results will be truncated. Use `page_token` to request additional pages of results.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+`page_token`
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+ to request additional pages of results.
+{% endswagger-parameter %}
 
-{% endapi-method-response-example-description %}
+{% swagger-parameter in="query" name="filters" type="object" %}
+Key value pairs of filters, where each value is an array to filter on. E.g.
 
+
+
+`{"risk_definition.scan`_`type": ['NMAP', 'NMAP_`_`UDP']}`
+
+
+
+Allowed keys: `target_id, status, tags, risk_definition.scan_type, risk_definition.threat_level, risk_definition.title`
+
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "data": [
@@ -46,10 +50,8 @@ If there are more than 500 risks, results will be truncated. Use `page_token` to
   next_page_token: "string"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Try it!
 
@@ -57,30 +59,16 @@ If there are more than 500 risks, results will be truncated. Use `page_token` to
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/risks
 ```
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/risks/:id" %}
-{% api-method-summary %}
-Get Risk
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/risks/:id" method="get" summary="Get Risk" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 ID of the risk to get.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "data": {
@@ -102,14 +90,11 @@ ID of the risk to get.
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Try it!
 
 ```bash
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/risks/12345
 ```
-
