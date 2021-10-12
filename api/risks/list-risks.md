@@ -18,7 +18,7 @@ Key value pairs of filters, where each value is an array to filter on. E.g.
 
 
 
-`{"risk_definition.scan`_`type": ['NMAP', 'NMAP_`_`UDP']}`
+`{"risk_definition.scantype": ['NMAP', 'NMAP_UDP']}`
 
 
 
