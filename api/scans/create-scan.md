@@ -1,41 +1,35 @@
 # Create Scan
 
-{% api-method method="post" host="https://api.hostedscan.com" path="/v1/scans" %}
-{% api-method-summary %}
-Create Scan
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans" method="post" summary="Create Scan" %}
+{% swagger-description %}
+Run a new vulnerability scan. Scan is created in the QUEUED state and will transition to RUNNING while it is in progress and then to SUCCEEDED once it is finished.
+{% endswagger-description %}
 
-{% api-method-description %}
+{% swagger-parameter in="body" name="targets" type="array" %}
+Targets to scan. e.g. 
 
-{% endapi-method-description %}
+`["example.com", "123.123.123.123"]`
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="targets" type="array" required=false %}
-Targets to scan. e.g. `["example.com", "123.123.123.123"]` Either tags, targets, or target\_ids must be specified.
-{% endapi-method-parameter %}
+ Either tags, targets, or target_ids must be specified.
+{% endswagger-parameter %}
 
-{% api-method-parameter name="target\_ids" type="array" required=false %}
-IDs of targets to scan. Either tags, targets, or target\_ids must be specified.
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="target_ids" type="array" %}
+IDs of targets to scan. Either tags, targets, or target_ids must be specified.
+{% endswagger-parameter %}
 
-{% api-method-parameter name="tags" type="array" required=false %}
-Tags to scan. e.g. `["prod", "webserver"]` Either tags, targets, or target\_ids must be specified.
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="tags" type="array" required="false" %}
+Tags to scan. e.g. 
 
-{% api-method-parameter name="type" type="string" required=true %}
-NMAP, NMAP\_UDP, SSLYZE, OPENVAS, or OWASP\_ZAP
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+`["prod", "webserver"]`
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+ Either tags, targets, or target_ids must be specified.
+{% endswagger-parameter %}
 
-{% endapi-method-response-example-description %}
+{% swagger-parameter in="body" name="type" type="string" required="true" %}
+NMAP, NMAP_UDP, SSLYZE, OPENVAS, or OWASP_ZAP
+{% endswagger-parameter %}
 
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "data": {
@@ -74,14 +68,11 @@ NMAP, NMAP\_UDP, SSLYZE, OPENVAS, or OWASP\_ZAP
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Try it!
 
 ```bash
 curl -H "Content-Type: application/json" -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request POST --data '{"target_ids": ["123", "456"], "type": "NMAP"}' https://api.hostedscan.com/v1/scans
 ```
-
