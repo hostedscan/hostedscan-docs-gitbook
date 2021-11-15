@@ -1,29 +1,19 @@
 # Get Scans
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans" %}
-{% api-method-summary %}
-Get Scans
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans" method="get" summary="Get Scans" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="query" name="page_token" type="string" %}
+If there are more than 500 scans, results will be truncated. Use 
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="page\_token" type="string" required=false %}
-If there are more than 500 scans, results will be truncated. Use `page_token` to request additional pages of results.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+`page_token`
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+ to request additional pages of results.
+{% endswagger-parameter %}
 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "data": [
@@ -32,6 +22,23 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
       "type": "NMAP || OPENVAS || OWASP_ZAP || OWASP_ZAP_ACTIVE || SSLYZE",
       "state": "QUEUED || RUNNING || SUCCEEDED || FAILED || OVER_LIMIT",
       "progress": 100,
+      "risks": {
+        "new_open": [
+          {
+            "risk_id": "string",
+          }
+        ],
+        "still_open": [
+          {
+            "risk_id": "string",
+          }
+        ],
+        "closed": [
+          {
+            "risk_id": "string",
+          }
+        ]
+      },
       "results": [
         {
           "result_id": "string",
@@ -73,10 +80,8 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
   "next_page_token": "string"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Try it!
 
@@ -84,30 +89,16 @@ If there are more than 500 scans, results will be truncated. Use `page_token` to
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/scans
 ```
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/scans/:id" %}
-{% api-method-summary %}
-Get Scan
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans/:id" method="get" summary="Get Scan" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" required="true" %}
 ID of the scan to get.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "data": {
@@ -115,6 +106,23 @@ ID of the scan to get.
     "type": "NMAP || OPENVAS || OWASP_ZAP || OWASP_ZAP_ACTIVE || SSLYZE",
     "state": "QUEUED || RUNNING || SUCCEEDED || FAILED || OVER_LIMIT",
     "progress": 100,
+    "risks": {
+      "new_open": [
+        {
+          "risk_id": "string",
+        }
+      ],
+      "still_open": [
+        {
+          "risk_id": "string",
+        }
+      ],
+      "closed": [
+        {
+          "risk_id": "string",
+        }
+      ]
+    },
     "results": [
       {
         "result_id": "string",
@@ -154,14 +162,11 @@ ID of the scan to get.
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Try it!
 
 ```bash
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/scans/12345
 ```
-
