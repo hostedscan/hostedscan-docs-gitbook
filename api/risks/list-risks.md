@@ -38,13 +38,22 @@ Allowed keys: `target_id, status, tags, risk_definition.scan_type, risk_definiti
       "tags": [],
       "status": "OPEN || CLOSED",
       "is_accepted": boolean,
+      "accepted_by": [
+        {
+          "note": "string",
+          "created_at": "Date",
+          "last_updated_at": "Date"
+        }
+      ],
       "risk_definition": {
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
         "title": "string",
         "threat_level": "LOW || MEDIUM || HIGH",
         "additional_info": {
           "key": "value"
-        }
+        },
+        "first_detected_at": "Date",
+        "last_detected_at": "Date"
       }
     }
   ],
@@ -80,6 +89,13 @@ ID of the risk to get.
       "tags": [],
       "status": "OPEN || CLOSED",
       "is_accepted": boolean,
+      "accepted_by": [
+        {
+          "note": "string",
+          "created_at": "Date",
+          "last_updated_at": "Date"
+        }
+      ],
       "risk_definition": {
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
         "title": "string",
@@ -87,7 +103,9 @@ ID of the risk to get.
         "additional_info": {
           "key": "value"
         }
-      }
+      },
+      "first_detected_at": "Date",
+      "last_detected_at": "Date"
     }
   }
 }
