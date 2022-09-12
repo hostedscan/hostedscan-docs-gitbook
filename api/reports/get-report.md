@@ -9,7 +9,7 @@ description: Download vulnerability report files.
 
 {% endswagger-description %}
 
-{% swagger-parameter in="path" required="true" %}
+{% swagger-parameter in="path" required="true" name="id" %}
 ID of the report to get
 {% endswagger-parameter %}
 
