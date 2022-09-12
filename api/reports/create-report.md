@@ -22,7 +22,9 @@ Array of target ids or tags. { id: ["target-123"] } of { tag: ["example-tag"] }
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
-    "report_id": "example-key-123" // Id to GET the report file
+    "data": {
+        "id": "example-key-123" // Id to GET the report file
+    }
 }
 ```
 {% endswagger-response %}
