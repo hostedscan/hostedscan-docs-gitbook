@@ -16,6 +16,9 @@
   * [Get Targets](api/targets/get-targets.md)
   * [Update Target](api/targets/update-target.md)
   * [Delete Target](api/targets/delete-target.md)
+* [Reports](api/reports/README.md)
+  * [Create Report](api/reports/create-report.md)
+  * [Get Report](api/reports/get-report.md)
 
 ## Webhooks
 
