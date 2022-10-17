@@ -9,6 +9,7 @@
   * [Create Scan](api/scans/create-scan.md)
   * [Get Scans](api/scans/get-scans.md)
   * [Get Scan Result File](api/scans/result-files.md)
+  * [Authenticated Scans](api/scans/authenticated-scans.md)
 * [Risks](api/risks/README.md)
   * [Get Risks](api/risks/list-risks.md)
 * [Targets](api/targets/README.md)

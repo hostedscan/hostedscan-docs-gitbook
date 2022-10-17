@@ -5,6 +5,10 @@
 Run a new vulnerability scan. Scan is created in the QUEUED state and will transition to RUNNING while it is in progress and then to SUCCEEDED once it is finished.
 {% endswagger-description %}
 
+{% swagger-parameter in="body" name="type" type="string" required="true" %}
+NMAP, NMAP_UDP, SSLYZE, OPENVAS, or OWASP_ZAP
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="targets" type="array" %}
 Targets to scan. e.g. 
 
@@ -25,8 +29,12 @@ Tags to scan. e.g.
  Either tags, targets, or target_ids must be specified.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-NMAP, NMAP_UDP, SSLYZE, OPENVAS, or OWASP_ZAP
+{% swagger-parameter in="body" name="use_authentication" type="boolean" %}
+Use authentication, if configured for the target(s). See 
+
+[https://hostedscan.com/authenticated-web-app-vulnerability-scan](https://hostedscan.com/authenticated-web-app-vulnerability-scan)
+
+ for more details.
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
