@@ -35,6 +35,7 @@ Allowed keys: `target_id, status, tags, risk_definition.scan_type, risk_definiti
       "id": "string",
       "target_id": "string",
       "target": "string",
+      "target_label": "string",
       "tags": [],
       "status": "OPEN || CLOSED",
       "is_accepted": boolean,
