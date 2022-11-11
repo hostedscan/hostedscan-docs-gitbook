@@ -86,6 +86,7 @@ ID of the risk to get.
       "id": "string",
       "target_id": "string",
       "target": "string",
+      "target_label": "string",
       "tags": [],
       "status": "OPEN || CLOSED",
       "is_accepted": boolean,
