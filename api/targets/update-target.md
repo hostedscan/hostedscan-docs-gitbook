@@ -1,33 +1,19 @@
 # Update Target
 
-{% api-method method="put" host="https://api.hostedscan.com" path="/v1/targets/:id" %}
-{% api-method-summary %}
-Update Target
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/targets/:id" method="put" summary="Update Target" expanded="true" %}
+{% swagger-description %}
 Update label or tags of an existing target.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="label" type="string" required=false %}
+{% swagger-parameter in="body" name="label" type="string" %}
 Label for the target
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="tags" type="array" required=false %}
+{% swagger-parameter in="body" name="tags" type="array" %}
 Up to 10 tags for filtering and sorting
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "data": {
@@ -40,14 +26,11 @@ Up to 10 tags for filtering and sorting
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Try it!
 
 ```bash
 curl -H "Content-Type: application/json" -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request PUT --data '{"label":"Updated Label", "tags":["updated-tag"]}' https://api.hostedscan.com/v1/targets/12345
 ```
-

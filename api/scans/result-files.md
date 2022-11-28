@@ -1,42 +1,24 @@
 # Get Scan Result File
 
-{% api-method method="get" host="https://api.hostedscan.com" path="/v1/results/:id" %}
-{% api-method-summary %}
-Get Scan Result File
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/results/:id" method="get" summary="Get Scan Result File" expanded="true" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 ID of the result file to get.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns the scan result file
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns the scan result file" %}
 ```javascript
 // file
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Try it!
 
 ```bash
 curl -o result.pdf -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET "https://api.hostedscan.com/v1/results/12345"
 ```
-
-
 
