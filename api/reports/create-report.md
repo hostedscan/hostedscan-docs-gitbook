@@ -58,7 +58,7 @@ Allowed keys: `status, risk_definition.scan_type, risk_definition.threat_level, 
 curl --header "X-HOSTEDSCAN-API-KEY: your-api-key-here" \
      --header "Content-Type: application/json" \
      --request POST \
-     --data '{"report_format": "PDF"}' \
+     --data '{ "report_format": "PDF" }' \
      https://api.hostedscan.com/v1/reports
 ```
 
