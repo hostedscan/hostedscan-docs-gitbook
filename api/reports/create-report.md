@@ -2,19 +2,23 @@
 
 
 
-{% swagger method="post" path="" baseUrl="https://api.hostedscan.com/v1/report" summary="Create Report" expanded="true" %}
+{% swagger method="post" path="" baseUrl="https://api.hostedscan.com/v1/reports" summary="Create Report" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="report_format" required="true" %}
-"PDF" or "HTML"
+`PDF`
+
+ or 
+
+`HTML`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="targets_filter" type="Object" %}
 Array of target ids or tags. 
 
-`{ id: ["target-123"] }`
+`{ _id: ["target-123"] }`
 
  of { 
 
