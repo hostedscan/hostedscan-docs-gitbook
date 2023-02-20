@@ -17,6 +17,10 @@ The webhook notifications sent by HostedScan are Event objects. An Event is a JS
 }
 ```
 
+{% content-ref url="event-types.md" %}
+[event-types.md](event-types.md)
+{% endcontent-ref %}
+
 ## Registering an Endpoint
 
 Your webhook endpoint must use HTTPS with a signed certificate, such as one from [https://letsencrypt.org](https://letsencrypt.org). HostedScan will not send to endpoints using self-signed certificates.
@@ -27,15 +31,21 @@ HostedScan will attempt to deliver messages to your endpoint multiple times. Any
 
 ## Securing Your Webhooks
 
-When you register an endpoint, HostedScan creates a signing secret for that endpoint. HostedScan uses this secret to send a signature in the header of each Event message. `X-HOSTEDSCAN-SIGNATURE`. To verify that an event was sent by HostedScan, your application can use the signing secret to recreate a signature for the message and verify that it matches the signature sent in the header.
+When you register an endpoint, HostedScan creates a signing secret for that endpoint. HostedScan uses this secret to send a signature in the header of each Event message. The signature can be validated using the signing secret to verify that an event was sent by HostedScan.
 
 ### Validate the Webhook Signature
 
-The `X-HOSTEDSCAN-SIGNATURE` is a hash-based message authentication code (HMAC) generated with SHA-256. To recreate this signature:
+Each webhook message request includes an http header X`-HOSTEDSCAN-SIGNATURE`. The `X-HOSTEDSCAN-SIGNATURE` is a hash-based message authentication code (HMAC) generated with SHA-256. To validate this signature an application will first recreate the signature using the signing secret for that endpoint and then check that the signature sent in the `X-HOSTEDSCAN-SIGNATURE` header matches the recreated signature. To do this, follow the steps below:
 
-1. Prepare the data to be signed. The data is: the message timestamp (sent in the `X-HOSTEDSCAN-TIMESTAMP` header), the character `.` ,  and the JSON payload sent in the request body.
+1. Prepare the data to be signed. The data is: the message timestamp (sent in the `X-HOSTEDSCAN-TIMESTAMP` header), the character . , and the JSON payload sent in the request body.
 2. Compute the expected signature. HMAC with SHA256.
 3. Compare the signature your application computed to ensure it matches the value sent in the `X-HOSTEDSCAN-SIGNATURE` header.
+
+## Sample Code
+
+The hostedscan-api-examples Github repository has sample code for receiving webhooks with an AWS Lambda function.
+
+{% embed url="https://github.com/hostedscan/hostedscan-api-examples/tree/main/receive_webhooks_with_aws_lambda/rust" %}
 
 
 

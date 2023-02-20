@@ -59,11 +59,7 @@ Occurs whenever a new risk is found. The event data is a Risk objects.
       "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
       "title": "string",
       "threat_level": "LOW || MEDIUM || HIGH",
-      "description"?: "string", // optional - may not be available for all scanners
-      "solution"?: "string", // optional - may not be available for all scanners
-      "references"?: string[], // optional - may not be available for all scanners
-      "cvss"?: "string", // optional - may not be available for all scanners
-      "additional_info": { // scanner specific output - structure is different per scan type and could change when scanners are upgraded to new major versions
+      "additional_info": {
         "key": "value"
       }
     }
@@ -87,14 +83,11 @@ Occurs when a risk is no longer found to be open. The event data is a Risk objec
       "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
       "title": "string",
       "threat_level": "LOW || MEDIUM || HIGH",
-      "description"?: "string", // optional - may not be available for all scanners
-      "solution"?: "string", // optional - may not be available for all scanners
-      "references"?: string[], // optional - may not be available for all scanners
-      "cvss"?: "string", // optional - may not be available for all scanners
-      "additional_info": { // scanner specific output - structure is different per scan type and could change when scanners are upgraded to new major versions
+      "additional_info": {
         "key": "value"
       }
     }
   }
 }
 ```
+

@@ -1,6 +1,6 @@
 # Get Risks
 
-{% swagger baseUrl="https://api.hostedscan.com" path="/v1/risks" method="get" summary="Get Risks" expanded="true" %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/risks" method="get" summary="Get Risks" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -50,11 +50,7 @@ Allowed keys: `target_id, status, tags, risk_definition.scan_type, risk_definiti
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
         "title": "string",
         "threat_level": "LOW || MEDIUM || HIGH",
-        "description"?: "string", // optional - may not be available for all scanners
-        "solution"?: "string", // optional - may not be available for all scanners
-        "references"?: string[], // optional - may not be available for all scanners
-        "cvss"?: "string", // optional - may not be available for all scanners
-        "additional_info": { // scanner specific output - structure is different per scan type and could change when scanners are upgraded to new major versions
+        "additional_info": {
           "key": "value"
         },
         "first_detected_at": "Date",
@@ -74,7 +70,7 @@ Allowed keys: `target_id, status, tags, risk_definition.scan_type, risk_definiti
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/risks
 ```
 
-{% swagger baseUrl="https://api.hostedscan.com" path="/v1/risks/:id" method="get" summary="Get Risk" expanded="true" %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/risks/:id" method="get" summary="Get Risk" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -106,11 +102,7 @@ ID of the risk to get.
         "scan_type": "NMAP || OPENVAS || OWASP_ZAP",
         "title": "string",
         "threat_level": "LOW || MEDIUM || HIGH",
-        "description"?: "string", // optional - may not be available for all scanners
-        "solution"?: "string", // optional - may not be available for all scanners
-        "references"?: string[], // optional - may not be available for all scanners
-        "cvss"?: "string", // optional - may not be available for all scanners
-        "additional_info": { // scanner specific output - structure is different per scan type and could change when scanners are upgraded to new major versions
+        "additional_info": {
           "key": "value"
         }
       },
