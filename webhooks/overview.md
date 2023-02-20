@@ -25,6 +25,8 @@ The webhook notifications sent by HostedScan are Event objects. An Event is a JS
 
 Your webhook endpoint must use HTTPS with a signed certificate, such as one from [https://letsencrypt.org](https://letsencrypt.org). HostedScan will not send to endpoints using self-signed certificates.
 
+You can register new webhook endpoints and view your existing webhook endpoints in your account settings at https://hostedscan.com/settings.
+
 ## Message Delivery and Retries
 
 HostedScan will attempt to deliver messages to your endpoint multiple times. Any 2xx response code from your endpoint is treated as a successful delivery. Any non-2xx status code is treated as a failure and will be retried.&#x20;
