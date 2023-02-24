@@ -27,6 +27,8 @@ Your webhook endpoint must use HTTPS with a signed certificate, such as one from
 
 You can register new webhook endpoints and view your existing webhook endpoints in your account settings at [https://hostedscan.com/settings](https://hostedscan.com/settings).
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-23 at 4.13.20 PM.png" alt=""><figcaption><p>Register new endpoints. view logs, and find the endpoint signing secret at <a href="https://hostedscan.com/settings">https://hostedscan.com/settings</a></p></figcaption></figure>
+
 ## Message Delivery and Retries
 
 HostedScan will attempt to deliver messages to your endpoint multiple times. Any 2xx response code from your endpoint is treated as a successful delivery. Any non-2xx status code is treated as a failure and will be retried.&#x20;

@@ -32,7 +32,7 @@ If there are more than 500 targets, results will be truncated. Use
 {% endswagger-response %}
 {% endswagger %}
 
-### Try it!
+### Example of listing targets
 
 
 
@@ -40,7 +40,7 @@ If there are more than 500 targets, results will be truncated. Use
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/targets
 ```
 
-{% swagger baseUrl="https://api.hostedscan.com" path="/v1/targets/:id" method="get" summary="Get Target" %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/targets/:id" method="get" summary="Get Target" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -65,7 +65,7 @@ ID of the target to get.
 {% endswagger-response %}
 {% endswagger %}
 
-### Try it!
+### Example of getting a specific target
 
 ```bash
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/targets/12345
