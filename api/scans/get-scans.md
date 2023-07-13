@@ -1,6 +1,6 @@
 # Get Scans
 
-{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans" method="get" summary="Get Scans" %}
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans" method="get" summary="Get Scans" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -11,6 +11,18 @@ If there are more than 500 scans, results will be truncated. Use
 `page_token`
 
  to request additional pages of results.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="filters" type="object" %}
+Key value pairs of filters, where each value is an array to filter on. E.g.
+
+
+
+`{"state": ["RUNNING"], "type": ["OPENVAS"]}`
+
+
+
+Allowed keys: `type, state, scheduled_by`
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
@@ -89,7 +101,13 @@ If there are more than 500 scans, results will be truncated. Use
 curl -H "X-HOSTEDSCAN-API-KEY: test-data-key" --request GET https://api.hostedscan.com/v1/scans
 ```
 
-{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans/:id" method="get" summary="Get Scan" %}
+### Example of listing scans with filters
+
+```shell
+curl -H "X-HOSTEDSCAN-API-KEY: your-api-key" -G --data-urlencode 'filters={"state": ["RUNNING"], "type": ["OPENVAS"]}' https://api.hostedscan.com/v1/scans
+```
+
+{% swagger baseUrl="https://api.hostedscan.com" path="/v1/scans/:id" method="get" summary="Get Scan" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
