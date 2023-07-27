@@ -31,7 +31,7 @@ You can register new webhook endpoints and view your existing webhook endpoints 
 
 ## Message Delivery and Retries
 
-HostedScan will attempt to deliver messages to your endpoint multiple times. Any 2xx response code from your endpoint is treated as a successful delivery. Any non-2xx status code is treated as a failure and will be retried.&#x20;
+HostedScan will attempt to deliver messages to your endpoint for up to 12 hours, with exponential backoff. Any 2xx response code from your endpoint is treated as a successful delivery. Any non-2xx status code (or a timeout) is treated as a failure and will be retried.&#x20;
 
 ## Securing Your Webhooks
 
