@@ -4,13 +4,13 @@ HostedScan uses webhooks to send event notifications to your application. Receiv
 
 ## Events
 
-The webhook notifications sent by HostedScan are Event objects. An Event is a JSON structure with the following properties: the event `id`, the `created_at` **** time, the event `type`**,** and the `data`.&#x20;
+The webhook notifications sent by HostedScan are Event objects. An Event is a JSON structure with the following properties: the event `id`, the `created_at` time, the event `type`**,** and the `data`.&#x20;
 
 ```javascript
 {
   "id": "12345",
   "created_at": 1602918350,
-  "type": "scan.completed",
+  "type": "scan.succeeded",
   "data": {
     ...
   }
