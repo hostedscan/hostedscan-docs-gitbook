@@ -24,7 +24,7 @@ Array of target ids or tags.
 
 `{ "target_ids": ["target-123"] }`
 
- of { 
+ or { 
 
 `"tag": ["example-tag"] }`
 {% endswagger-parameter %}
